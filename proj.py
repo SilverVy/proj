@@ -17,14 +17,14 @@ class ImageProcessor(QMainWindow):
 
         self.image_label = QLabel(self)
         self.image_label.setAlignment(Qt.AlignCenter)
-        self.image_label.setStyleSheet("background-color: white;")  # Убираем черную обводку
+        self.image_label.setStyleSheet("background-color: white;") 
 
         self.scroll_area = QScrollArea(self)
         self.scroll_area.setWidget(self.image_label)
         self.scroll_area.setWidgetResizable(True)
         self.scroll_area.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
         self.scroll_area.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
-        self.scroll_area.setStyleSheet("border: none;")  # Убираем границу области прокрутки
+        self.scroll_area.setStyleSheet("border: none;")  
 
         self.load_image_button = QPushButton("Загрузить Изображение", self)
         self.load_image_button.clicked.connect(self.load_image)
@@ -47,7 +47,7 @@ class ImageProcessor(QMainWindow):
 
         self.scaling_factor_slider = QSlider(Qt.Horizontal, self)
         self.scaling_factor_slider.setRange(1, 100)
-        self.scaling_factor_slider.setValue(50)  # Устанавливаем начальное значение в 50%
+        self.scaling_factor_slider.setValue(50) 
         self.scaling_factor_slider.setTickPosition(QSlider.TicksBelow)
         self.scaling_factor_slider.setTickInterval(10)
         self.scaling_factor_slider.setSingleStep(1)
