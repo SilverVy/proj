@@ -9,9 +9,6 @@ torch==1.8.1
 typing_extensions @ file:///opt/conda/conda-bld/typing_extensions_1647553014482/work
 wincertstore==0.2
 numpy==1.21.0
-
 opencv-python==4.5.3.56
-
 PyQt5==5.15.4
-
 PyQt5-sip==12.9.0
