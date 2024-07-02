@@ -215,7 +215,7 @@ class ImageProcessor(QMainWindow):
 
     def rotate_image(self):
         if self.image is None:
-            self.show_error("Изображение не загружено.")
+            self.show_error("Изображение не загружено")
             return
 
         angle, ok = QInputDialog.getDouble(self, 'Вращать Изображение', 'Введите угол в градусах:', 0, -360, 360, 1)
